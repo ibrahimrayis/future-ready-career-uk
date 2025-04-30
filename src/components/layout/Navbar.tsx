@@ -38,7 +38,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-md shadow-md py-2' : 'bg-transparent py-4'}`}>
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-md shadow-md py-2' : 'bg-cbc-navy/90 backdrop-blur-md py-4'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
@@ -55,16 +55,16 @@ const Navbar = () => {
 
           {/* Desktop menu */}
           <div className="hidden md:flex md:items-center md:space-x-8">
-            <Link to="/" className="text-cbc-navy hover:text-cbc-gold font-medium transition-colors elegant-underline">
+            <Link to="/" className={`${scrolled ? 'text-cbc-navy' : 'text-white'} hover:text-cbc-gold font-medium transition-colors elegant-underline`}>
               Home
             </Link>
-            <a href="#courses" className="text-cbc-navy hover:text-cbc-gold font-medium transition-colors elegant-underline">
+            <a href="#courses" className={`${scrolled ? 'text-cbc-navy' : 'text-white'} hover:text-cbc-gold font-medium transition-colors elegant-underline`}>
               Courses
             </a>
-            <a href="#locations" className="text-cbc-navy hover:text-cbc-gold font-medium transition-colors elegant-underline">
+            <a href="#locations" className={`${scrolled ? 'text-cbc-navy' : 'text-white'} hover:text-cbc-gold font-medium transition-colors elegant-underline`}>
               Locations
             </a>
-            <a href="#contact" className="text-cbc-navy hover:text-cbc-gold font-medium transition-colors elegant-underline">
+            <a href="#contact" className={`${scrolled ? 'text-cbc-navy' : 'text-white'} hover:text-cbc-gold font-medium transition-colors elegant-underline`}>
               Contact
             </a>
 
@@ -87,7 +87,7 @@ const Navbar = () => {
             </div>
 
             <Link to="/login">
-              <Button variant="outline" className="border-cbc-gold text-cbc-gold hover:bg-cbc-gold hover:text-white transition-all">
+              <Button variant="outline" className={`border-cbc-gold text-cbc-gold hover:bg-cbc-gold hover:text-white transition-all`}>
                 Login
               </Button>
             </Link>
