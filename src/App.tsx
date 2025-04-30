@@ -12,6 +12,7 @@ import PMPProgram from "./pages/programs/PMPProgram";
 import CIAProgram from "./pages/programs/CIAProgram";
 import CISAProgram from "./pages/programs/CISAProgram";
 import EnglishProgram from "./pages/programs/EnglishProgram";
+import Login from "./pages/Login";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/programs/cma" element={<CMAProgram />} />
           <Route path="/programs/cdcs" element={<CDCSProgram />} />
           <Route path="/programs/pmp" element={<PMPProgram />} />

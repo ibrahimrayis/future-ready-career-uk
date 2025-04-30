@@ -86,6 +86,28 @@ const CourseCategories = () => {
                 <Link to="/programs/cisa" className="hover:text-cbc-gold transition-colors">CISA (Certified Information Systems Auditor)</Link>
               </li>
             </ul>
+
+            {/* Certification Provider Logos */}
+            <div className="mt-6">
+              <p className="text-sm font-medium text-gray-700 mb-3">Certification Providers:</p>
+              <div className="grid grid-cols-3 gap-4">
+                <div className="bg-gray-50 p-3 rounded-lg flex items-center justify-center">
+                  <img src="https://www.imanet.org/-/media/926a0caa113049ef865ebf38fac0b45c.ashx" alt="IMA Logo" className="h-8 object-contain" />
+                </div>
+                <div className="bg-gray-50 p-3 rounded-lg flex items-center justify-center">
+                  <img src="https://www.icc-austria.org/fxp/images/icc/icc_logo.jpg" alt="ICC Logo" className="h-8 object-contain" />
+                </div>
+                <div className="bg-gray-50 p-3 rounded-lg flex items-center justify-center">
+                  <img src="https://www.pmi.org/-/media/pmi/other-images/learn-about-pmi/pmi-logo-mark.png" alt="PMI Logo" className="h-8 object-contain" />
+                </div>
+                <div className="bg-gray-50 p-3 rounded-lg flex items-center justify-center">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz1LCQd1aTsjXZRBAdW4ku9E9Dcz53hlMOAKJGiA0&s" alt="IIA Logo" className="h-8 object-contain" />
+                </div>
+                <div className="bg-gray-50 p-3 rounded-lg flex items-center justify-center">
+                  <img src="https://www.isaca.org/-/media/images/isacadp/project/isaca/icons/footer/isaca-logo-footer.svg" alt="ISACA Logo" className="h-8 object-contain" />
+                </div>
+              </div>
+            </div>
           </CardContent>
           <CardFooter className="pt-4">
             <Button className="bg-cbc-gold hover:bg-amber-600 text-white rounded-md shadow-md hover:shadow-lg transition-all" asChild>
@@ -125,6 +147,19 @@ const CourseCategories = () => {
               <div className="flex items-center">
                 <BookIcon className="h-5 w-5 text-cbc-navy mr-2" />
                 <span>Written communication mastery</span>
+              </div>
+            </div>
+
+            {/* English Course Partners */}
+            <div className="mt-6">
+              <p className="text-sm font-medium text-gray-700 mb-3">Educational Partners:</p>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="bg-gray-50 p-3 rounded-lg flex items-center justify-center">
+                  <img src="https://britishcouncil.org/profiles/solas/themes/solas/assets/images/svg/british-council-logo.svg" alt="British Council" className="h-8 object-contain" />
+                </div>
+                <div className="bg-gray-50 p-3 rounded-lg flex items-center justify-center">
+                  <img src="https://www.cambridgeenglish.org/Images/cambridge-english-logo.svg" alt="Cambridge English" className="h-8 object-contain" />
+                </div>
               </div>
             </div>
           </CardContent>
