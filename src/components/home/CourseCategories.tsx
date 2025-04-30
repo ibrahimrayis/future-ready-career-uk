@@ -2,6 +2,7 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { BriefcaseIcon, BookIcon, GraduationCapIcon } from "lucide-react";
+import { Link } from "react-router-dom";
 import { useEffect, useRef } from "react";
 
 const CourseCategories = () => {
@@ -66,29 +67,29 @@ const CourseCategories = () => {
             <ul className="space-y-3">
               <li className="flex items-center">
                 <span className="bg-cbc-gold/20 rounded-full p-1 mr-2"></span>
-                <span>CMA (Certified Management Accountant)</span>
+                <Link to="/programs/cma" className="hover:text-cbc-gold transition-colors">CMA (Certified Management Accountant)</Link>
               </li>
               <li className="flex items-center">
                 <span className="bg-cbc-gold/20 rounded-full p-1 mr-2"></span>
-                <span>CDCS (Certified Documentary Credit Specialist)</span>
+                <Link to="/programs/cdcs" className="hover:text-cbc-gold transition-colors">CDCS (Certified Documentary Credit Specialist)</Link>
               </li>
               <li className="flex items-center">
                 <span className="bg-cbc-gold/20 rounded-full p-1 mr-2"></span>
-                <span>PMP (Project Management Professional)</span>
+                <Link to="/programs/pmp" className="hover:text-cbc-gold transition-colors">PMP (Project Management Professional)</Link>
               </li>
               <li className="flex items-center">
                 <span className="bg-cbc-gold/20 rounded-full p-1 mr-2"></span>
-                <span>CIA (Certified Internal Auditor)</span>
+                <Link to="/programs/cia" className="hover:text-cbc-gold transition-colors">CIA (Certified Internal Auditor)</Link>
               </li>
               <li className="flex items-center">
                 <span className="bg-cbc-gold/20 rounded-full p-1 mr-2"></span>
-                <span>CISA (Certified Information Systems Auditor)</span>
+                <Link to="/programs/cisa" className="hover:text-cbc-gold transition-colors">CISA (Certified Information Systems Auditor)</Link>
               </li>
             </ul>
           </CardContent>
           <CardFooter className="pt-4">
-            <Button className="bg-cbc-gold hover:bg-amber-600 text-white rounded-md shadow-md hover:shadow-lg transition-all">
-              Learn More
+            <Button className="bg-cbc-gold hover:bg-amber-600 text-white rounded-md shadow-md hover:shadow-lg transition-all" asChild>
+              <Link to="/programs/cma">Learn More</Link>
             </Button>
           </CardFooter>
         </Card>
@@ -128,8 +129,8 @@ const CourseCategories = () => {
             </div>
           </CardContent>
           <CardFooter className="pt-4">
-            <Button className="bg-cbc-navy hover:bg-blue-900 text-white rounded-md shadow-md hover:shadow-lg transition-all">
-              Learn More
+            <Button className="bg-cbc-navy hover:bg-blue-900 text-white rounded-md shadow-md hover:shadow-lg transition-all" asChild>
+              <Link to="/programs/english">Learn More</Link>
             </Button>
           </CardFooter>
         </Card>
